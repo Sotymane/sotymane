@@ -12,18 +12,23 @@
     position: relative;
 }
 
+body {
+    background-color: #aaa;
+}
+
 .bg {
     position: fixed;
     left: 0;
     right: 0;
-    z-index: -1;
+    z-index: 0;
     display: block;
 
-    background-image: url("/bg.jpg");
+    background-image: url("./bg.jpg");
     background-size: cover;
+    background-position: center;
     width: 100vw;
     height: 100vh;
-    filter: brightness(0.6) blur(5px);
+    /* filter: brightness(5) blur(2px); */
 }
 
 ol,
@@ -35,7 +40,7 @@ menu {
 }
 
 .songs {
-    height: calc(100vh - 18.5rem);
+    height: calc(100vh - 20rem);
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     position: relative;
@@ -47,29 +52,5 @@ menu {
 @media (max-width: 1024px) {
     .songs {
         height: calc(100vh - 25rem);
-    }
-}
-
-.contact {
-    /* position: absolute;
-    bottom: 0;
-    left: 0; */
-    width: 100%;
-    padding: 2rem 3rem;
-    text-align: center;
-    z-index: 10;
-}
-
-.contact h6 {
-    font-size: 0.9rem;
-    font-weight: 300;
-    color: #111;
-    opacity: 0.7;
-    letter-spacing: 0.1em;
-}
-
-@media (max-width: 768px) {
-    .contact {
-        padding: 1.5rem;
     }
 }

@@ -1,26 +1,31 @@
 import "./App.css";
+import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Release } from "./components/Release";
 
 function App() {
     return (
         <>
+            <div className="bg" />
             <Header />
             <ul className="songs">
                 <Release
-                    name="Song 1"
-                    imageUrl="./1.png"
-                    bandlinkUrl="https://google.com"
+                    name="Sotymane - Teleport Inside"
+                    imageUrl="./covers/teleport-inside_x1024.jpg"
+                    bandlinkUrl="https://band.link/teleportinside"
                 />
                 <Release
-                    name="Song 2"
-                    imageUrl="./2.png"
-                    bandlinkUrl="https://google.com"
+                    name="Grey Killer, Sotymane - Dark Road"
+                    imageUrl="./covers/DR1_x1024.jpg"
+                    bandlinkUrl="https://band.link/darkroad"
+                />
+                <Release
+                    name="Sotymane, friedeyez - In Halftone"
+                    imageUrl="./covers/In Halftone_x1024.jpg"
+                    bandlinkUrl="https://band.link/inhalftone"
                 />
             </ul>
-            <div className="contact">
-                <h6>Contact: ....@..ru</h6>
-            </div>
+            <Footer />
         </>
     );
 }
