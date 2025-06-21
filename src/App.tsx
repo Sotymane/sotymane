@@ -9,12 +9,12 @@ function App() {
             <ul className="songs">
                 <Release
                     name="Song 1"
-                    imageUrl="/1.png"
+                    imageUrl="./1.png"
                     bandlinkUrl="https://google.com"
                 />
                 <Release
                     name="Song 2"
-                    imageUrl="/2.png"
+                    imageUrl="./2.png"
                     bandlinkUrl="https://google.com"
                 />
             </ul>
