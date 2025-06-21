@@ -1,0 +1,38 @@
+.header {
+    width: 100%;
+    padding: 2rem 3rem;
+    z-index: 10;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(45deg, #111, #777);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header h2 {
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.3em;
+    color: #111;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 1.5rem;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header h2 {
+        font-size: 0.8rem;
+    }
+}

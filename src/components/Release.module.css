@@ -1,0 +1,47 @@
+.release {
+    max-width: calc(100vh - 18.5rem);
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: center;
+    height: calc(100vh - 18.5rem);
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+@media (max-width: 1024px) {
+    .release {
+        max-width: calc(100vh - 25rem);
+        height: calc(100vh - 25rem);
+    }
+}
+@media (min-width: 768px) {
+    .release {
+        max-width: 768px;
+    }
+}
+@media (min-width: 640px) {
+    .release {
+        max-width: 640px;
+    }
+}
+
+.releaseImg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.releaseImg:hover {
+    scale: 1.01;
+    transform: translateY(-1px);
+}
